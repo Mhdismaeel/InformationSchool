@@ -8,8 +8,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+
 
 namespace InformationSchool.Repository.Services.Admin
 {
@@ -262,5 +264,13 @@ namespace InformationSchool.Repository.Services.Admin
             db.SaveChanges();
             return model;
         }
+
+
+        public List<IdentityRole> GetRoles()
+        {
+            return db.Roles.ToList();
+        }
+
+
     }
 }

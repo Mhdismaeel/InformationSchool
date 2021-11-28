@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\InformationSchool\\InformationSchool\\InformationSchool.csproj": {}
+    "D:\\InformationSchoolProj\\InformationSchool\\InformationSchool\\InformationSchool.csproj": {}
   },
   "projects": {
-    "D:\\InformationSchool\\InformationSchool\\InformationSchool.csproj": {
+    "D:\\InformationSchoolProj\\InformationSchool\\InformationSchool\\InformationSchool.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\InformationSchool\\InformationSchool\\InformationSchool.csproj",
+        "projectUniqueName": "D:\\InformationSchoolProj\\InformationSchool\\InformationSchool\\InformationSchool.csproj",
         "projectName": "InformationSchool",
-        "projectPath": "D:\\InformationSchool\\InformationSchool\\InformationSchool.csproj",
+        "projectPath": "D:\\InformationSchoolProj\\InformationSchool\\InformationSchool\\InformationSchool.csproj",
         "packagesPath": "C:\\Users\\MHDISM\\.nuget\\packages\\",
-        "outputPath": "D:\\InformationSchool\\InformationSchool\\obj\\",
+        "outputPath": "D:\\InformationSchoolProj\\InformationSchool\\InformationSchool\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,10 +43,6 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.AspNet.Identity.Core": {
-              "target": "Package",
-              "version": "[2.2.3, )"
-            },
             "Microsoft.AspNetCore.Authentication": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -54,6 +50,10 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[5.0.11, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",

@@ -127,7 +127,7 @@ namespace InformationSchool.Repository.AuthService
                 Email = model.Email,
                 PhoneNumber = model.PhoneNumber,
                 Adress = model.Address,
-                ImageProfile = model.ImageProfile
+                ImageProfile=model.ImageProfile
             };
           
 

@@ -2,6 +2,7 @@
 using InformationSchool.Model.Auth;
 using InformationSchool.Model.Binding;
 using InformationSchool.Model.DTO;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +32,8 @@ namespace InformationSchool.Repository.Interfaces.Admin
           bool DeleteClass(int id);
           Class UpdateClass(Class model);
           Class CreateClass(Class model);
+        //----------------------------------------------------Role
 
+        List<IdentityRole> GetRoles();
     }
 }

@@ -2,11 +2,14 @@
 using InformationSchool.Model.Auth;
 using InformationSchool.Model.Binding;
 using InformationSchool.Repository.Interfaces.Admin;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
 namespace InformationSchool.Controllers
@@ -120,5 +123,13 @@ namespace InformationSchool.Controllers
         {
             return Ok(_IAdminServices.UpdateClass(model));
         }
+
+        [HttpGet("GetRoles")]
+        public IActionResult GetRoles()
+        {
+            return Ok(_IAdminServices.GetRoles());
+        }
+
+
     }
 }
